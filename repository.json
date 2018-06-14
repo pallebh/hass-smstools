@@ -1,5 +1,5 @@
 {
-  "name": "Hass.IO example smstools(sms gateway)",
+  "name": "Hass.io smstools(sms gateway)",
   "url": "https://github.com/pallebh/hass-smstools/",
   "maintainer": "palle bertra hansen <pallebh@gmail.com>"
 }
