@@ -1,5 +1,5 @@
 {
-  "name": "Sms gatewa(smstools)",
+  "name": "Sms gateway(smstools)",
   "version": "1.0",
   "slug": "Sms gateway",
   "description": "",
@@ -9,7 +9,7 @@
     "80/tcp": 8080
   },
   "options": {
-    "device":  
+    "device":""  
   },
   "schema": {
     "device": ""
