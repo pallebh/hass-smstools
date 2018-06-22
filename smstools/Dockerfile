@@ -28,6 +28,21 @@ RUN git clone https://github.com/pallebh/mqtt2sms.git
 
 
 # Copy data
+COPY smsd.conf /etc/smsd.conf
+
+RUN mkdir /var/spool/sms/failed
+RUN chown smsd /var/spool/sms/failed
+
+RUN mkdir /var/spool/sms/sent
+RUN chown smsd /var/spool/sms/sent
+
+RUN mkdir /var/run/smsd
+RUN chown smsd /var/run/smsd
+
+RUN mkdir /var/log/smsd/smsd_stats
+RUN chown smsd /var/run/smsd
+
+
 #COPY run.sh /
 #RUN chmod a+x /run.sh
 
