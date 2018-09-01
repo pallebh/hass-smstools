@@ -17,16 +17,16 @@ RUN pip install --upgrade pip
 RUN pip install paho-mqtt
 RUN pip install docopt
 
-
 RUN apk add --no-cache git
+
 # installing  
 RUN git clone https://github.com/pallebh/sms2mqtt.git
+cp phonenumbers.json /sms2mqtt/phonenumbers.json
 
 # installing 
 RUN apk add --no-cache mosquitto
 RUN git clone https://github.com/pallebh/mqtt2sms.git
-
-
+ 
 # Copy data
 COPY smsd.conf /etc/smsd.conf
 
@@ -41,7 +41,6 @@ RUN chown smsd /var/run/smsd
 
 RUN mkdir /var/log/smsd/smsd_stats
 RUN chown smsd /var/run/smsd
-
 
 #COPY run.sh /
 #RUN chmod a+x /run.sh
