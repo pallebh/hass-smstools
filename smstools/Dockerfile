@@ -46,3 +46,4 @@ RUN chown smsd /var/run/smsd
 #RUN chmod a+x /run.sh
 
 #CMD [ "/run.sh" ]
+
