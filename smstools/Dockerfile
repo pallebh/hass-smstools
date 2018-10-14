@@ -20,12 +20,12 @@ RUN pip install docopt
 RUN apk add --no-cache git
 
 # installing  
-RUN git clone https://github.com/pallebh/sms2mqtt.git
-cp phonenumbers.json /sms2mqtt/phonenumbers.json
+#RUN git clone https://github.com/pallebh/sms2mqtt.git
+#cp phonenumbers.json /sms2mqtt/phonenumbers.json
 
 # installing 
-RUN apk add --no-cache mosquitto
-RUN git clone https://github.com/pallebh/mqtt2sms.git
+#RUN apk add --no-cache mosquitto
+#RUN git clone https://github.com/pallebh/mqtt2sms.git
  
 # Copy data
 COPY smsd.conf /etc/smsd.conf

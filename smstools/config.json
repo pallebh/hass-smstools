@@ -1,17 +1,26 @@
 {
-  "name": "Sms gateway(smstools)",
-  "version": "1.0",
-  "slug": "Sms gateway",
-  "description": "",
-  "startup": "before",
-  "boot": "auto",
-  "ports": 
-  {
-    "80/tcp": 8080
-  },
-  "options": 
-  {
-    "device":""  
+    "name": "Sms gateway(smstools)",
+    "version": "1.0",
+    "slug": "Sms gateway",
+    "description": "",
+    "boot": "auto",
+    "ports": {
+    },
+      
+    "options": {
+        "smstools": {
+            "device" : "/dev/ttyACM0",
+            "pin" : "1234", 
+            "baudrate": 19200
+    },   
+  
+    "options": {
+        "smstools": {
+            "device" : "str",
+            "pin" : "str", 
+            "baudrate": "int"
+    },
+
   },
   "image": "smstools/{arch}-addon-smstools"
 }
