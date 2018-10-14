@@ -5,13 +5,13 @@
   "description": "",
   "startup": "before",
   "boot": "auto",
-  "ports": {
+  "ports": 
+  {
     "80/tcp": 8080
   },
-  "options": {
+  "options": 
+  {
     "device":""  
   },
-  "schema": {
-    "device": ""
-  }
+  "image": "smstools/{arch}-addon-smstools"
 }
