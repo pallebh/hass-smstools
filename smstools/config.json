@@ -4,23 +4,22 @@
     "slug": "Sms gateway",
     "description": "",
     "boot": "auto",
-    "ports": {
-    },
-      
+    "ports": {},
+
     "options": {
         "smstools": {
-            "device" : "/dev/ttyACM0",
-            "pin" : "1234", 
-            "baudrate": 19200
-    },   
-  
-    "options": {
-        "smstools": {
-            "device" : "str",
-            "pin" : "str", 
-            "baudrate": "int"
+            "device": "/dev/ttyACM0",
+            "pin": "",
+            "baudrate": "19200"
+        }
     },
 
-  },
-  "image": "smstools/{arch}-addon-smstools"
+    "schema": {
+        "smstools": {
+            "device": "str",
+            "pin": "str",
+            "baudrate": "int"
+        }
+    },
+    "image": "smstools/{arch}-addon-smstools"
 }
