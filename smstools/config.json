@@ -21,6 +21,5 @@
             "pin": "str",
             "baudrate": "int"
         }
-    },
-    "image": "smstools/{arch}-addon-smstools"
+    }
 }
