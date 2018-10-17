@@ -42,8 +42,7 @@ RUN chown smsd /var/run/smsd
 RUN mkdir /var/log/smsd/smsd_stats
 RUN chown smsd /var/run/smsd
 
-#COPY run.sh /
-#RUN chmod a+x /run.sh
-
-#CMD [ "/run.sh" ]
+COPY run.sh /
+RUN chmod a+x /run.sh
+CMD [ "/run.sh" ]
 
