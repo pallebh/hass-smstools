@@ -3,6 +3,7 @@
     "version": "1.0",
     "slug": "Sms gateway",
     "description": "",
+    "startup": "before",
     "boot": "auto",
     "ports": {},
 
