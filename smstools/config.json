@@ -1,7 +1,7 @@
 {
-    "name": "Sms gateway(smstools)",
+    "name": "sms gateway(smstools)",
     "version": "1.0",
-    "slug": "Sms gateway",
+    "slug": "sms gateway",
     "description": "",
     "startup": "before",
     "boot": "auto",
