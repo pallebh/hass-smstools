@@ -5,12 +5,12 @@
     "description": "",
     "startup": "before",
     "boot": "auto",
-    "ports": {},
-    "devices":[], 
+    "ports": [],
+    "devices": ["/dev/bus/usb:/dev/bus/usb:rwm"], 
 
     "options": {
         "smstools": {
-            "device": "/dev/ttyACM0",
+            "device": "/dev/ttyUSB0",
             "pin": "",
             "baudrate": "19200"
         }
