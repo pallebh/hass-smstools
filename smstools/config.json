@@ -6,6 +6,7 @@
     "startup": "before",
     "boot": "auto",
     "ports": {},
+    "devices":{}, 
 
     "options": {
         "smstools": {
