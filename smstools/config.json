@@ -6,13 +6,14 @@
     "startup": "before",
     "boot": "auto",
     "ports": [],
-    "devices": ["/dev/bus/usb:/dev/bus/usb:rwm"], 
+    "devices": ["/dev:/dev/"], 
 
     "options": {
         "smstools": {
             "device": "/dev/ttyUSB0",
             "pin": "",
-            "baudrate": "19200"
+            "baudrate": "19200",
+            "init": ""
         }
     },
 
@@ -20,7 +21,8 @@
         "smstools": {
             "device": "str",
             "pin": "str",
-            "baudrate": "int"
+            "baudrate": "int",  
+            "init":"str"
         }
     }
 }
