@@ -1,0 +1,3 @@
+device =  BAURATE=/dev/ttyUSB0 \n
+#pin =  \n
+baudrate =  19200 \n
