@@ -21,6 +21,6 @@ SMSDCONF_PATH=/etc/smsd.conf
 #BAUDRATE=$(jq --raw-output ".options.smstools.baudrate" $CONFIG_PATH)
 #echo "baudrate = " $BAUDRATE >> $SMSDCONF_PATH
 
-cat $SMSDCONF_PATH 
+#cat $SMSDCONF_PATH 
 smsd -t &
 #tail -f /var/log/smsd.log
