@@ -22,5 +22,5 @@ SMSDCONF_PATH=/etc/smsd.conf
 #echo "baudrate = " $BAUDRATE >> $SMSDCONF_PATH
 
 #cat $SMSDCONF_PATH 
-smsd -t &
+#smsd -t &
 #tail -f /var/log/smsd.log
