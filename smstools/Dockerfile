@@ -20,9 +20,6 @@ RUN apk add --no-cache smstools
 COPY smsd.conf /etc/smsd.conf
 
 
-
-
-
 # mkdir for smsmtools
 RUN mkdir /var/spool/sms/failed
 RUN mkdir /var/spool/sms/sent
@@ -34,6 +31,9 @@ RUN chown smsd /var/spool/sms/sent
 RUN chown smsd /var/run/smsd
 RUN chown smsd /var/log/smsd/smsd_stats
 
+# fix stdout problem
+
+RUN chmod o+w /dev/stdout
 
 COPY run.sh /
 RUN chmod a+x /run.sh
