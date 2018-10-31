@@ -17,13 +17,12 @@ if [ -z $PIN ] ;
 	else echo "pin = " $PIN >> $SMSDCONF_PATH ;
 fi
 	
-
 DEVICE=$(jq --raw-output ".options.smstools.device" $CONFIG_PATH)
 echo "device = " $DEVICE >> $SMSDCONF_PATH
 
 BAUDRATE=$(jq --raw-output ".options.smstools.baudrate" $CONFIG_PATH)
 echo "baudrate = " $BAUDRATE >> $SMSDCONF_PATH
 
-cat $SMSDCONF_PATH 
+#cat $SMSDCONF_PATH 
 #smsd -t &
 #tail -f /var/log/smsd.log

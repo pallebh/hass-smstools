@@ -33,7 +33,8 @@ RUN chown smsd /var/log/smsd/smsd_stats
 
 # fix stdout problem
 
+# Copy data
 COPY run.sh /
 RUN chmod a+x /run.sh
-CMD [ "/run.sh" ]
 
+CMD [ "/run.sh" ]
