@@ -6,7 +6,7 @@
     "startup": "before",
     "boot": "auto",
     "ports": {},
-    "devices": ["/dev:/dev:rwm"], 
+     
 
     "options": {
         "smstools": {
