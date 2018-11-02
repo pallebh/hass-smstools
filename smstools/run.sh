@@ -1,6 +1,6 @@
 #!/bin/bash
 #set -e
-#echo "echo test"
+echo "echo test"
 #chmod o+w /dev/stdout
 
 CONFIG_PATH=/data/options.json
